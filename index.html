@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Valentine's Invite</title>
+    <style>
+        body {
+            text-align: center;
+            font-family: Arial, sans-serif;
+            background: url('https://source.unsplash.com/1600x900/?romantic,love') no-repeat center center fixed;
+            background-size: cover;
+            color: white;
+        }
+        .container {
+            margin-top: 100px;
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.8);
+            display: inline-block;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px gray;
+            color: black;
+        }
+        button {
+            font-size: 20px;
+            padding: 10px 20px;
+            margin: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .yes-btn {
+            background-color: #ff4d4d;
+            color: white;
+        }
+        .no-btn {
+            background-color: gray;
+            color: white;
+            cursor: not-allowed;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Will you be my Valentine, Pakeeza? ❤️</h1>
+        <button class="yes-btn" onclick="redirectToForm()">Yes</button>
+        <button class="no-btn" disabled>No</button>
+    </div>
+
+    <script>
+        function redirectToForm() {
+            window.open("https://docs.google.com/forms/d/e/1FAIpQLSfkPjzraxIINtCbzcCGpc-jT-Z1hmLEe6oYTRoHuSsNWk_Vjw/viewform?usp=header", "_blank");
+        }
+    </script>
+</body>
+</html>
